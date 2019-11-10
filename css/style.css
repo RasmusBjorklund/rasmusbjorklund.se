@@ -1,0 +1,7 @@
+h1 {
+  font-family: 'DM Serif Display', serif;
+}
+
+section:nth-child(2) {
+  background-color: #F3C637;
+}
