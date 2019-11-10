@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" integrity="sha256-MHZlm8KTLRxClmwQTYIfJEVbcRx1VIgfZJjaBOGCDoc=" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.scss">
 </head>
 
 <body>
@@ -23,9 +23,6 @@
     <div class="section s3">
       <h1>Some section</h1>
     </div>
-    <div class="section s4">
-      <h1>Some section</h1>
-    </div>
   </div>
 </body>
 
@@ -36,8 +33,12 @@
   new fullpage('#fullpage', {
     autoScrolling: true,
     licenseKey: 'eoV6nMD#z7',
-    sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
-    scrollbar: true
+    sectionsColor: ['#F3C637', '#3B3B3B', '#F3C637', '#3B3B3B', '#000'],
+    navigation: true,
+    anchors: ['section1','section2','section3'],
+    navigationTooltips: ['Home','Work','Contact'],
+    showActiveTooltip: true,
+
   });
 </script>
 
