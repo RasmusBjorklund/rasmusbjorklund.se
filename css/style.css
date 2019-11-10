@@ -3,12 +3,10 @@ h1 {
   text-align: center;
 }
 
-.s1 {
-  h1 {
-    text-align: left;
-    font-size: 4rem;
-    margin-left: 2em;
-  }
+.s1 h1 {
+  text-align: left;
+  font-size: 4rem;
+  margin-left: 2em;
 }
 
 .s2 {}
