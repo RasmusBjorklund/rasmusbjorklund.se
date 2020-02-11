@@ -1,18 +1,314 @@
 h1 {
-  font-family: 'DM Serif Display', serif;
-  text-align: center;
-}
-
-.s1 h1 {
+  font-family: "Montserrat", sans-serif !important;
   text-align: left;
-  font-size: 4rem;
-  margin-left: 2em;
+  font-size: 6rem;
+  margin-left: 4rem;
+  color: #7ADFB7;
+  font-weight: 700;
 }
 
-.s2 {}
+h2 {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 4rem;
+  font-weight: 700;
+}
 
-.s3 {}
+h3 {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 6rem;
+  margin-left: 4rem;
+  color: #7ADFB7;
+  font-weight: 700;
+}
 
-span {
+h4 {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 1.75rem;
   color: white;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 1.25rem;
+}
+
+a {
+  color: #0E0C22;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+body,
+html {
+  color: white;
+}
+
+.fp-tableCell {
+  display: flex !important;
+  align-items: center;
+}
+
+.half-container {
+  width: 50%;
+}
+
+.s1 {
+  color: white;
+  display: table-cell;
+}
+
+.s1 h2 {
+  text-align: left;
+  font-size: 3rem;
+  margin-left: 4rem;
+}
+
+.s2 ul {
+  list-style: none;
+}
+
+.s2 .work-item {
+  display: block;
+}
+
+.s2 .work-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 4rem 0 0;
+  padding: 1rem 1rem 0;
+  align-items: center;
+}
+
+.s2 .work-description {
+  display: none;
+  color: white;
+  margin: 0 5rem 0 0;
+  padding: 0 1rem 1rem;
+}
+
+.s2 .work-description p {
+  padding-bottom: 0.5rem;
+}
+
+.s2 .toggle-button {
+  border-radius: 50%;
+  height: 2rem;
+  background-color: #F581AF;
+  padding: 1.25rem;
+  margin-right: 4rem;
+  color: #0E0C22;
+}
+
+.s2 .toggle-button:hover .fa-plus {
+  transform: scale(0.8);
+}
+
+.s2 .toggle-button:hover .fa-minus {
+  transform: scale(0.8);
+}
+
+.s2 .fa-minus,
+.s2 .fa-plus {
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.s2 .primary-button {
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem 0 0;
+  background-color: #F581AF;
+  min-width: 15% !important;
+  text-decoration: none;
+  font-size: 1.25rem;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.s2 .primary-button:hover {
+  border: 2px solid #7ADFB7;
+}
+
+.s2 .disabled {
+  cursor: not-allowed;
+  background-color: #f25d98;
+}
+
+.s3 .me-description {
+  margin-right: 4rem;
+}
+
+.s3 .me-description p {
+  font-size: 2rem;
+}
+
+.s3 .me-description em {
+  color: #F581AF;
+  font-style: normal;
+}
+
+.s4 form {
+  overflow: hidden;
+  margin-right: 4rem;
+}
+
+.s4 form #form-messages {
+  margin: 2rem 0 2rem 2rem;
+  font-family: "Montserrat", sans-serif !important;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.s4 form .success {
+  background-color: green;
+}
+
+.s4 form .error {
+  background-color: red;
+}
+
+.s4 form button,
+.s4 form input,
+.s4 form textarea {
+  position: relative;
+  margin: 2rem;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif !important;
+  border: none;
+  border-bottom: 3px solid white;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.s4 form button::placeholder,
+.s4 form input::placeholder,
+.s4 form textarea::placeholder {
+  color: white;
+}
+
+.s4 form button:focus, .s4 form button:hover,
+.s4 form input:focus,
+.s4 form input:hover,
+.s4 form textarea:focus,
+.s4 form textarea:hover {
+  border-bottom: 3px solid #F581AF;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+}
+
+.s4 form button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: #0E0C22;
+  background-color: #F581AF;
+  min-width: 15% !important;
+  width: 30%;
+  font-size: 2.25rem;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  /*button div (button text before hover)*/
+}
+
+.s4 form button:focus, .s4 form button:hover {
+  border: 3px solid white;
+}
+
+.s4 form button:focus::before, .s4 form button:hover::before {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.s4 form button:before {
+  content: attr(data-hover);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 0.8em;
+  opacity: 0;
+  color: white;
+  transform: translate(-100%, 0);
+  transition: all 0.3s ease-in-out;
+}
+
+.s4 form button div {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 0.8em;
+  transition: all 0.3s ease-in-out;
+}
+
+.s4 form button:focus div,
+.s4 form button:hover div {
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translate(100%, 0);
+}
+
+.s4 form textarea {
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  resize: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  h1,
+  h3 {
+    text-align: center;
+    margin: 0 0 10rem;
+    font-size: 9rem;
+  }
+  .s1 h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
+  }
+  h4 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2.5rem;
+  }
+  .fp-tableCell {
+    display: table-cell !important;
+  }
+  .half-container {
+    width: 100%;
+  }
+  .section {
+    text-align: center;
+  }
+  .s2 .work-header {
+    margin: 1rem 0 0;
+  }
+  .s2 .primary-button {
+    padding: 0.5rem 1rem;
+    font-size: 2.25rem;
+  }
+  .s3 .me-description {
+    margin: 0;
+  }
+  .s3 .me-description p {
+    font-size: 3rem;
+  }
+  .s4 form {
+    display: block;
+  }
+  .s4 form input,
+  .s4 form textarea {
+    font-size: 3rem;
+  }
+  .s4 form input[type='submit'],
+  .s4 form textarea[type='submit'] {
+    font-size: 3rem;
+  }
 }
